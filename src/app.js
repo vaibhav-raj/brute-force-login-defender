@@ -13,7 +13,7 @@ app.use(loggerMiddleware);
 //CORS setup
 app.use(
     cors({
-        origin: "*",
+        origin: process.env.FRONTEND_URL
     })
 );
 //Health check endpoint
