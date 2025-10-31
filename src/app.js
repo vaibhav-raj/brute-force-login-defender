@@ -3,6 +3,7 @@ const cors = require("cors");
 const routes = require("./routes");
 const loggerMiddleware = require("./middlewares/logger.middleware");
 const errorHandler = require("./middlewares/error.middleware");
+const { frontendUrl } = require('./config/index');
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.use(loggerMiddleware);
 //CORS setup
 app.use(
     cors({
-        origin: process.env.FRONTEND_URL
+        origin: frontendUrl
     })
 );
 //Health check endpoint

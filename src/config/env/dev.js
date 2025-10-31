@@ -12,4 +12,5 @@ module.exports = {
     ipThreshold: process.env.IP_THRESHOLD || 100,
     ipSuspendMinutes: process.env.IP_SUSPEND_MINUTES || 15,
 
+    frontendUrl: process.env.FRONTEND_URL
 };
