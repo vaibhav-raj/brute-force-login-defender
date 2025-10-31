@@ -76,12 +76,12 @@ IP_SUSPEND_MINUTES=60
 
 ```plaintext
 Frontend (React) → Backend (Express API) → MongoDB Atlas
-│
-├── User Suspension Logic
-├── IP Block Logic
-├── JWT Auth & Validation
-├── Winston Logging
-└── Unit Tests (Jest)
+                        |
+                        ├── User Suspension Logic
+                        ├── IP Block Logic
+                        ├── JWT Auth & Validation
+                        ├── Winston Logging
+                        └── Unit Tests (Jest)
 ```
 
 ### Data Models
